@@ -5,9 +5,9 @@ modified: 1645803611426
 created: 1645803351392
 name: local-dev
 data:
-  scheme: https
+  scheme: http
   base_path: ""
-  host: localhost:7001
+  host: 127.0.0.1:7000
 dataPropertyOrder:
   "&":
     - scheme
