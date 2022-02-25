@@ -1,0 +1,10 @@
+_id: ut_ccba4063fdaf44168d5ea58460d42c24
+type: UnitTest
+parentId: uts_f9d5b1020f324d28a75d58d2b644eee5
+modified: 1645822915687
+created: 1645805939853
+requestId: req_wrk_54c4f7e14f424a1b8d511da3fc1a35f4412a8689
+name: Send chat command returns 200
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);

@@ -1,0 +1,13 @@
+_id: ut_01f79bbb61994055820541d6c4d37dce
+type: UnitTest
+parentId: uts_f9d5b1020f324d28a75d58d2b644eee5
+modified: 1645822930132
+created: 1645819605641
+requestId: req_wrk_54c4f7e14f424a1b8d511da3fc1a35f4e8dadecc
+name: Get history returns 200 and element with two entries
+code: |-
+  const response = await insomnia.send();
+  expect(response.status).to.equal(200);
+  const body = JSON.parse(response.data);
+  expect(body).to.be.an('array');
+  //expect(body).to.have.lengthOf(2);

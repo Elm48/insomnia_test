@@ -1,18 +1,19 @@
-_id: req_wrk_54c4f7e14f424a1b8d511da3fc1a35f4412a8689
+_id: req_aae896893367451a8903953ba0aa7e47
 type: Request
 parentId: wrk_54c4f7e14f424a1b8d511da3fc1a35f4
-modified: 1645823061774
-created: 1645803351386
+modified: 1645821412345
+created: 1645819434967
 url: "{{ base_url }}/easie-chat/send"
-name: /easie-chat/send (hello)
+name: /easie-chat/send (how am i)
 description: ""
 method: POST
 body:
   mimeType: application/json
   text: |-
     {
-      "chatText": "hello",
-      "commandType": 2
+      "chatText": "who am i",
+      "commandType": 0,
+      "actionButtonId": "string"
     }
 parameters:
   - name: chat_rev
@@ -29,7 +30,7 @@ headers:
     value: application/json
     id: pair_4545864c008448f5b32f4665c9d4a48f
 authentication: {}
-metaSortKey: -1645803351386
+metaSortKey: -1645803351385
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
