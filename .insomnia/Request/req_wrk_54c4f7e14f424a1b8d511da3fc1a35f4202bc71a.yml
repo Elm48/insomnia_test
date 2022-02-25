@@ -1,0 +1,24 @@
+_id: req_wrk_54c4f7e14f424a1b8d511da3fc1a35f4202bc71a
+type: Request
+parentId: wrk_54c4f7e14f424a1b8d511da3fc1a35f4
+modified: 1645803351380
+created: 1645803351380
+url: "{{ base_url }}/easie-chat/settings"
+name: /easie-chat/settings
+description: ""
+method: POST
+body: {}
+parameters:
+  - name: lang
+    disabled: true
+    value: string
+headers: []
+authentication: {}
+metaSortKey: -1645803351380
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
