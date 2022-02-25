@@ -1,0 +1,163 @@
+_id: spc_9351ba9cbaa94320a8aa165f8d020db5
+type: ApiSpec
+parentId: wrk_54c4f7e14f424a1b8d511da3fc1a35f4
+modified: 1645802637512
+created: 1645800842726
+fileName: eaSieWebApis.yaml
+contents: |-
+  {
+    "openapi": "3.0.1",
+    "info": {
+      "title": "eaSieClientRESTService",
+      "version": "v1"
+    },
+  	"servers": [
+  	 { 
+  	 "url": "https://localhost" 
+  	 }
+  	],
+    "paths": {
+      "/easie-chat/create": {
+        "post": {
+          "tags": [
+            "Chat"
+          ],
+          "responses": {
+            "200": {
+              "description": "Success"
+            }
+          }
+        }
+      },
+      "/easie-chat/send": {
+        "post": {
+          "tags": [
+            "Chat"
+          ],
+          "parameters": [
+            {
+              "name": "chat_rev",
+              "in": "query",
+              "schema": {
+                "type": "string",
+                "format": "uuid"
+              }
+            },
+            {
+              "name": "chat_diag",
+              "in": "query",
+              "schema": {
+                "type": "integer",
+                "format": "int32"
+              }
+            }
+          ],
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChatCommand"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChatCommand"
+                }
+              },
+              "application/*+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChatCommand"
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Success"
+            }
+          }
+        }
+      },
+      "/easie-chat/listen": {
+        "get": {
+          "tags": [
+            "Chat"
+          ],
+          "parameters": [
+            {
+              "name": "chat_rev",
+              "in": "query",
+              "schema": {
+                "type": "string",
+                "format": "uuid"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Success"
+            }
+          }
+        }
+      },
+      "/easie-chat/settings": {
+        "post": {
+          "tags": [
+            "Chat"
+          ],
+          "parameters": [
+            {
+              "name": "lang",
+              "in": "query",
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Success"
+            }
+          }
+        }
+      }
+    },
+    "components": {
+      "schemas": {
+        "ChatCommand": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "chatText": {
+              "type": "string",
+              "default": "",
+              "nullable": true
+            },
+            "commandType": {
+              "$ref": "#/components/schemas/ChatCommandType"
+            },
+            "actionButtonId": {
+              "type": "string",
+              "default": "",
+              "nullable": true
+            }
+          },
+          "additionalProperties": false
+        },
+        "ChatCommandType": {
+          "enum": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    }
+  }
+contentType: yaml
