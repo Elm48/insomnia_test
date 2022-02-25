@@ -1,7 +1,7 @@
 _id: spc_9351ba9cbaa94320a8aa165f8d020db5
 type: ApiSpec
 parentId: wrk_54c4f7e14f424a1b8d511da3fc1a35f4
-modified: 1645803585788
+modified: 1645805471987
 created: 1645800842726
 fileName: eaSieWebApis.yaml
 contents: |-
@@ -13,7 +13,7 @@ contents: |-
     },
   	"servers": [
   	 { 
-  	 "url": "https://localhost:7001" 
+  	 "url": "http://localhost:7000" 
   	 }
   	],
     "paths": {

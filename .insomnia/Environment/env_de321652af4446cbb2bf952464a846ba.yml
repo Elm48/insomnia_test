@@ -1,13 +1,13 @@
-_id: env_env_ef8bb024ea4c347b83bd4f75e7447e9371a55a3a_sub
+_id: env_de321652af4446cbb2bf952464a846ba
 type: Environment
 parentId: env_ef8bb024ea4c347b83bd4f75e7447e9371a55a3a
-modified: 1645805481556
-created: 1645803351392
-name: local-dev
+modified: 1645805557802
+created: 1645805484497
+name: local-dev (https)
 data:
-  scheme: http
+  scheme: https
   base_path: ""
-  host: 127.0.0.1:7000
+  host: 127.0.0.1:7001
 dataPropertyOrder:
   "&":
     - scheme
@@ -15,4 +15,4 @@ dataPropertyOrder:
     - host
 color: null
 isPrivate: false
-metaSortKey: 1645803351393
+metaSortKey: 1645803351443
