@@ -1,9 +1,9 @@
 _id: ut_4e96139dfb0b4b7caca9a3df63c0fbb1
 type: UnitTest
 parentId: uts_7553639092e449f48bdc77f851f0eca6
-modified: 1646140882737
+modified: 1646141150550
 created: 1646140879955
-requestId: req_wrk_54c4f7e14f424a1b8d511da3fc1a35f4412a8689
+requestId: req_a9c86fcfa0c74c8c824e3bf061e508c4
 name: Send chat with fixed chat id returns 200
 code: |-
   const response1 = await insomnia.send();

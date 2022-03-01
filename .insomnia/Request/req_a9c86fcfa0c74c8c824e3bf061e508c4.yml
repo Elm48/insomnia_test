@@ -1,7 +1,7 @@
 _id: req_a9c86fcfa0c74c8c824e3bf061e508c4
 type: Request
 parentId: fld_87b4c23c5d29470ebb1df138ffdf2ebd
-modified: 1646140842478
+modified: 1646141073882
 created: 1646139820287
 url: "{{ base_url }}/easie-chat/send"
 name: Send command with reference to create chat
