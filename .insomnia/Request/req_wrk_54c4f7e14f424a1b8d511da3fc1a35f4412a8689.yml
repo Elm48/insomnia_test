@@ -1,7 +1,7 @@
 _id: req_wrk_54c4f7e14f424a1b8d511da3fc1a35f4412a8689
 type: Request
 parentId: wrk_54c4f7e14f424a1b8d511da3fc1a35f4
-modified: 1646124986099
+modified: 1646139486127
 created: 1645803351386
 url: "{{ base_url }}/easie-chat/send"
 name: /easie-chat/send (hello)
@@ -17,8 +17,7 @@ body:
 parameters:
   - name: chat_rev
     disabled: false
-    value: "{% response 'body', 'req_wrk_54c4f7e14f424a1b8d511da3fc1a35f403f77179',
-      'b64::JC5pZA==::46b', 'never', 60 %}"
+    value: cce44321-7942-44bc-9de4-0a57ad7d2ede
     id: pair_108003a729e942dbae789f4a5cdba260
   - name: chat_diag
     disabled: true
@@ -29,7 +28,7 @@ headers:
     value: application/json
     id: pair_4545864c008448f5b32f4665c9d4a48f
 authentication: {}
-metaSortKey: -1645803351386
+metaSortKey: -1645803351387.5
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
