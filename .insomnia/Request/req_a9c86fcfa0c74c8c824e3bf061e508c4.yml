@@ -1,10 +1,10 @@
-_id: req_wrk_54c4f7e14f424a1b8d511da3fc1a35f4412a8689
+_id: req_a9c86fcfa0c74c8c824e3bf061e508c4
 type: Request
 parentId: fld_87b4c23c5d29470ebb1df138ffdf2ebd
-modified: 1646139983129
-created: 1645803351386
+modified: 1646139984333
+created: 1646139820287
 url: "{{ base_url }}/easie-chat/send"
-name: /easie-chat/send (hello)
+name: Send command with reference to create chat
 description: ""
 method: POST
 body:
@@ -15,20 +15,18 @@ body:
       "commandType": 2
     }
 parameters:
-  - name: chat_rev
-    disabled: false
-    value: cce44321-7942-44bc-9de4-0a57ad7d2ede
-    id: pair_108003a729e942dbae789f4a5cdba260
-  - name: chat_diag
-    disabled: true
-    value: "0"
-    id: pair_feda5b59746948fb8be119f1868054e3
+  - id: pair_00a3ed4a2fa1440fa89f485a0f387b66
+    name: chat_rev
+    value: "{% response 'body', 'req_wrk_54c4f7e14f424a1b8d511da3fc1a35f403f77179',
+      'b64::JC5pZA==::46b', 'never', 60 %}"
+    description: ""
 headers:
-  - name: Content-Type
+  - id: pair_60d71a9216364ec6b75c51dcb7f94f17
+    name: Content-Type
     value: application/json
-    id: pair_4545864c008448f5b32f4665c9d4a48f
+    description: ""
 authentication: {}
-metaSortKey: -1645971547548.5
+metaSortKey: -1645971547573.5
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

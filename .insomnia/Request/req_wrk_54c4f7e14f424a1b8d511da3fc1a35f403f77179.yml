@@ -1,7 +1,7 @@
 _id: req_wrk_54c4f7e14f424a1b8d511da3fc1a35f403f77179
 type: Request
-parentId: wrk_54c4f7e14f424a1b8d511da3fc1a35f4
-modified: 1646139178797
+parentId: fld_87b4c23c5d29470ebb1df138ffdf2ebd
+modified: 1646139935714
 created: 1645803351389
 url: "{{ base_url }}/easie-chat/create"
 name: /easie-chat/create
@@ -15,7 +15,7 @@ headers:
     value: application/json
     description: ""
 authentication: {}
-metaSortKey: -1645803351389
+metaSortKey: -1645971547598.5
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
