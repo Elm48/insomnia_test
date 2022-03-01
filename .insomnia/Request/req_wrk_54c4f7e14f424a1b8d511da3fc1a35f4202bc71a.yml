@@ -1,7 +1,7 @@
 _id: req_wrk_54c4f7e14f424a1b8d511da3fc1a35f4202bc71a
 type: Request
-parentId: wrk_54c4f7e14f424a1b8d511da3fc1a35f4
-modified: 1645803351380
+parentId: fld_174ada4e995b468c9cb011887e5f19ca
+modified: 1646142394157
 created: 1645803351380
 url: "{{ base_url }}/easie-chat/settings"
 name: /easie-chat/settings
@@ -10,8 +10,9 @@ method: POST
 body: {}
 parameters:
   - name: lang
-    disabled: true
-    value: string
+    disabled: false
+    value: en
+    id: pair_2529506f16134287965b8f98e9da3bba
 headers: []
 authentication: {}
 metaSortKey: -1645803351380

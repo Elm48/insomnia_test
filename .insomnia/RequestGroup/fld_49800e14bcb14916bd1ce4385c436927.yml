@@ -1,0 +1,10 @@
+_id: fld_49800e14bcb14916bd1ce4385c436927
+type: RequestGroup
+parentId: wrk_54c4f7e14f424a1b8d511da3fc1a35f4
+modified: 1646142354942
+created: 1646142354942
+name: ChatHistory
+description: ""
+environment: {}
+environmentPropertyOrder: null
+metaSortKey: -1646142354942

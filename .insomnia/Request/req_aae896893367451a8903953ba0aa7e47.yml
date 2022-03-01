@@ -1,7 +1,7 @@
 _id: req_aae896893367451a8903953ba0aa7e47
 type: Request
-parentId: wrk_54c4f7e14f424a1b8d511da3fc1a35f4
-modified: 1646139128218
+parentId: fld_fcaa974d183c4a8686d1f91934286a6e
+modified: 1646142472495
 created: 1645819434967
 url: "{{ base_url }}/easie-chat/send"
 name: /easie-chat/send (how am i)
@@ -19,7 +19,7 @@ parameters:
   - name: chat_rev
     disabled: false
     value: "{% response 'body', 'req_wrk_54c4f7e14f424a1b8d511da3fc1a35f403f77179',
-      'b64::JC5pZA==::46b', 'never', 60 %}"
+      'b64::JC5pZA==::46b', 'always', 60 %}"
     id: pair_108003a729e942dbae789f4a5cdba260
   - name: chat_diag
     disabled: true
@@ -30,7 +30,7 @@ headers:
     value: application/json
     id: pair_4545864c008448f5b32f4665c9d4a48f
 authentication: {}
-metaSortKey: -1645803351385
+metaSortKey: -1645971547498.5
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

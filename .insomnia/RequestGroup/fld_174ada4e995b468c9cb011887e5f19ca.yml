@@ -1,0 +1,10 @@
+_id: fld_174ada4e995b468c9cb011887e5f19ca
+type: RequestGroup
+parentId: wrk_54c4f7e14f424a1b8d511da3fc1a35f4
+modified: 1646142371311
+created: 1646142371311
+name: ChatConfiguration
+description: ""
+environment: {}
+environmentPropertyOrder: null
+metaSortKey: -1646142371311
