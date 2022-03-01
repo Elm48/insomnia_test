@@ -1,7 +1,7 @@
 _id: req_a9c86fcfa0c74c8c824e3bf061e508c4
 type: Request
 parentId: fld_87b4c23c5d29470ebb1df138ffdf2ebd
-modified: 1646139984333
+modified: 1646140842478
 created: 1646139820287
 url: "{{ base_url }}/easie-chat/send"
 name: Send command with reference to create chat
@@ -18,7 +18,7 @@ parameters:
   - id: pair_00a3ed4a2fa1440fa89f485a0f387b66
     name: chat_rev
     value: "{% response 'body', 'req_wrk_54c4f7e14f424a1b8d511da3fc1a35f403f77179',
-      'b64::JC5pZA==::46b', 'never', 60 %}"
+      'b64::JC5pZA==::46b', 'no-history', 60 %}"
     description: ""
 headers:
   - id: pair_60d71a9216364ec6b75c51dcb7f94f17
